@@ -7,6 +7,9 @@
 # Inherit from the proprietary version
 include vendor/xiaomi/sm8450-common/BoardConfigVendor.mk
 
+# Power
+TARGET_POWERHAL_MODE_EXT := $(COMMON_PATH)/power/power-mode.cpp
+
 COMMON_PATH := device/xiaomi/sm8450-common
 
 # A/B

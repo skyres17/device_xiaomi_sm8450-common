@@ -147,6 +147,10 @@ service vendor.pd_mapper /vendor/bin/pd-mapper
     user system
     group system
 
+# Touch feature
+    chown system system /dev/xiaomi-touch
+    chmod 0660 /dev/xiaomi-touch
+
 #Peripheral manager
 service vendor.per_mgr /vendor/bin/pm-service
     class core
